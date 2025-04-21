@@ -562,6 +562,7 @@ body {
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
+    width: 100%;
     position: relative;
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/carousel-1.jpg);
@@ -570,6 +571,7 @@ body {
     background-size: cover;
     padding: 140px 0 60px 0;
     transition: 0.5s;
+    border-radius: 0 0 20px 20px;
 }
 
 @media (min-width: 992px) {
@@ -1375,6 +1377,7 @@ body {
 .ourPartners .row .col-md-2 {
     width: 20%;
     border-right: 1px solid #dbdfdd;
+    padding: 0;
 }
 
 .ourPartners .row .col-md-2:nth-child(5n) {
@@ -1394,9 +1397,17 @@ body {
 }
 
 .ourPartners a:hover img {
-    filter: grayscale(0);
+    filter: grayscale(0) drop-shadow(0 0 5px rgba(0, 0, 0, 0.05));
     opacity: 1;
     scale: 0.8;
+}
+.ourPartners a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.ourPartners a:hover{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05) inset;
 }
 
 @media screen and (max-width:762px) {
@@ -1418,5 +1429,55 @@ body {
     .ourPartners .row .col-md-2:nth-child(9n),
     .ourPartners .row .col-md-2:nth-child(10n) {
         border-bottom: none;
+    }
+}
+
+/* Why Content */
+.whyContent h1{
+    padding: 0 3.0rem;
+    font-family: var(--font-bold);
+    text-align: center;
+    text-transform: capitalize;
+    white-space:nowrap;
+    font-size: 8.0vi;
+    font-weight: bold;
+    color: var(--bs-primary);
+}
+.whyContent .container{
+    margin-top: -9.0rem;
+}
+.whyContent .container .item:hover{
+    scale: 1.1;
+    transform: translateY(-20px);
+}
+.whyContent .container .item{
+    background-color: #f8f8f8c5;
+    padding: 2.0rem;
+    border-radius: 10px;
+    outline: 2px solid #fff;
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+    height: 100%;
+}
+.whyContent .container .item h2{
+    font-family: var(--font-semi-bold);
+    color: var(--primary-dark-color);
+}
+.whyContent .container .item p{
+    font-family: var(--font-regular);
+    color: var(--navitem-text-color);
+    text-align: justify;
+}
+@media screen and (max-width:762px) {
+    .whyContent h1{
+        padding: 0 3.0rem;
+        font-size: 4.0vi;
+    }
+    .whyContent .container{
+        margin-top: -1.0rem;
+    }
+    .whyContent .container .item:hover{
+        scale: 1.0;
+        transform: translateY(0px);
     }
 }
