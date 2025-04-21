@@ -40,7 +40,9 @@
     <link rel="stylesheet" href="css/config.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
-<body>
+<body data-barba="wrapper">
+
+    <main data-barba="container" data-barba-namespace="home">
 
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -328,16 +330,16 @@
                 <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
                     <div class="nav nav-pills bg-light rounded p-5">
                         <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
-                            <h5 class="mb-0">Lending money for investment of your new projects</h5>
+                            <h5 class="mb-0 title">Lending money for investment of your new projects</h5>
                         </a>
                         <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
-                            <h5 class="mb-0">Lending money for investment of your new projects</h5>
+                            <h5 class="mb-0 title">Lending money for investment of your new projects</h5>
                         </a>
                         <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
-                            <h5 class="mb-0">Mobile payment is more flexible and easy for all investors</h5>
+                            <h5 class="mb-0 title">Mobile payment is more flexible and easy for all investors</h5>
                         </a>
                         <a class="accordion-link p-4 mb-0" data-bs-toggle="pill" href="#collapseFour">
-                            <h5 class="mb-0">all transaction is kept free for the member of pro traders</h5>
+                            <h5 class="mb-0 title">all transaction is kept free for the member of pro traders</h5>
                         </a>
                     </div>
                 </div>
@@ -349,7 +351,7 @@
                                     <img src="img/offer-1.jpg" class="img-fluid w-100 rounded" alt="">
                                 </div>
                                 <div class="col-md-5">
-                                    <h1 class="display-5 mb-4">The stock market provides a venue...</h1>
+                                    <h1 class="display-5 mb-4 title">The stock market provides a venue...</h1>
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
                                     </p>
                                     <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
@@ -362,7 +364,7 @@
                                     <img src="img/offer-2.jpg" class="img-fluid w-100 rounded" alt="">
                                 </div>
                                 <div class="col-md-5">
-                                    <h1 class="display-5 mb-4">The stock market provides a venue...</h1>
+                                    <h1 class="display-5 mb-4 title">The stock market provides a venue...</h1>
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
                                     </p>
                                     <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
@@ -375,7 +377,7 @@
                                     <img src="img/offer-3.jpg" class="img-fluid w-100 rounded" alt="">
                                 </div>
                                 <div class="col-md-5">
-                                    <h1 class="display-5 mb-4">The stock market provides a venue...</h1>
+                                    <h1 class="display-5 mb-4 title">The stock market provides a venue...</h1>
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
                                     </p>
                                     <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
@@ -388,7 +390,7 @@
                                     <img src="img/offer-4.jpg" class="img-fluid w-100 rounded" alt="">
                                 </div>
                                 <div class="col-md-5">
-                                    <h1 class="display-5 mb-4">The stock market provides a venue...</h1>
+                                    <h1 class="display-5 mb-4 title">The stock market provides a venue...</h1>
                                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
                                     </p>
                                     <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
@@ -719,10 +721,14 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a> 
+
+    </main>
     
 </body>
 
 <!-- JavaScript Libraries -->
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="lib/wow/wow.min.js"></script>
@@ -736,5 +742,8 @@
 <!-- Template Javascript -->
 <script src="js/component.js"></script>
 <script src="js/main.js"></script>
+<script>
+    
+</script>
 
 </html>
