@@ -403,7 +403,9 @@ body {
 
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--bs-light);
+        /* background: var(--bs-light); */
+        background: rgba(255, 255, 255, 0.8) !important;
+        backdrop-filter: blur(30px);
     }
 
     .navbar-light .navbar-nav .nav-link::before {
@@ -1114,6 +1116,10 @@ body {
     background-position: 100% 300%;
     background-size: contain;
     background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+.homeBanner:has(a:hover) {
+    background-position: 100% 280%;
 }
 
 .homeBanner .container {
@@ -1401,12 +1407,14 @@ body {
     opacity: 1;
     scale: 0.8;
 }
-.ourPartners a{
+
+.ourPartners a {
     display: block;
     height: 100%;
     width: 100%;
 }
-.ourPartners a:hover{
+
+.ourPartners a:hover {
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05) inset;
 }
 
@@ -1420,12 +1428,15 @@ body {
         padding: 1.0rem;
         scale: 1.0;
     }
+
     .ourPartners .row::after {
         display: none;
     }
+
     .ourPartners .row .col-md-2:nth-child(5n) {
         border-right: 1px solid #dbdfdd;
     }
+
     .ourPartners .row .col-md-2:nth-child(9n),
     .ourPartners .row .col-md-2:nth-child(10n) {
         border-bottom: none;
@@ -1433,24 +1444,27 @@ body {
 }
 
 /* Why Content */
-.whyContent h1{
+.whyContent h1 {
     padding: 0 3.0rem;
     font-family: var(--font-bold);
     text-align: center;
     text-transform: capitalize;
-    white-space:nowrap;
+    white-space: nowrap;
     font-size: 8.0vi;
     font-weight: bold;
     color: var(--bs-primary);
 }
-.whyContent .container{
+
+.whyContent .container {
     margin-top: -9.0rem;
 }
-.whyContent .container .item:hover{
+
+.whyContent .container .item:hover {
     scale: 1.1;
     transform: translateY(-20px);
 }
-.whyContent .container .item{
+
+.whyContent .container .item {
     background-color: #f8f8f8c5;
     padding: 2.0rem;
     border-radius: 10px;
@@ -1459,24 +1473,29 @@ body {
     cursor: pointer;
     height: 100%;
 }
-.whyContent .container .item h2{
+
+.whyContent .container .item h2 {
     font-family: var(--font-semi-bold);
     color: var(--primary-dark-color);
 }
-.whyContent .container .item p{
+
+.whyContent .container .item p {
     font-family: var(--font-regular);
     color: var(--navitem-text-color);
     text-align: justify;
 }
+
 @media screen and (max-width:762px) {
-    .whyContent h1{
+    .whyContent h1 {
         padding: 0 3.0rem;
         font-size: 4.0vi;
     }
-    .whyContent .container{
+
+    .whyContent .container {
         margin-top: -1.0rem;
     }
-    .whyContent .container .item:hover{
+
+    .whyContent .container .item:hover {
         scale: 1.0;
         transform: translateY(0px);
     }

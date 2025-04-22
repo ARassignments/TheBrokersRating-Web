@@ -1,5 +1,3 @@
-
-
 if (document.querySelector("header")) {
   document.querySelector("header").innerHTML = `
         <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0 text-dark">
@@ -13,7 +11,7 @@ if (document.querySelector("header")) {
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0 text-dark">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="index.html" class="nav-item nav-link">News</a>
+                    <a href="" class="nav-item nav-link">News</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link" data-bs-toggle="dropdown">
                             <span class="dropdown-toggle">Brokers</span>
@@ -49,7 +47,7 @@ if (document.querySelector("header")) {
                         </a>
                         <div class="dropdown-menu m-0">
                             <a href="https://www.exness.global/" class="dropdown-item" target="_blank"> <img src="img/ultra rated/Exness.svg" alt=""> Exness</a>
-                            <a href="https://www.grouphf.com/my/" class="dropdown-item" target="_blank"> <img src="img/ultra rated/hfm.svg" alt="" class="bg-dark"> HFM</a>
+                            <a href="https://www.grouphf.com/my/" class="dropdown-item" target="_blank"> <img src="img/ultra rated/hfm.svg" alt=""> HFM</a>
                             <a href="https://www.xmbroker-fx.com/" class="dropdown-item" target="_blank"> <img src="img/ultra rated/xm.png" alt=""> XM</a>
                             <a href="https://ictrading.com/en/" class="dropdown-item" target="_blank"> <img src="img/ultra rated/ic.svg" alt=""> IC</a>
                             <a href="https://my.octafx.com/" class="dropdown-item" target="_blank"> <img src="img/ultra rated/octa.svg" alt=""> Octa</a>
