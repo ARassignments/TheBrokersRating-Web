@@ -18797,7 +18797,7 @@ textarea.form-control-lg {
 
 .text-success {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important
+    color: rgba(var(--primary-theme-rgb), var(--bs-text-opacity)) !important
 }
 
 .text-info {
